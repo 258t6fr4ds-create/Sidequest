@@ -1,7 +1,8 @@
 const PREFIX='sidequest:'+self.registration.scope+':';
-const CACHE=PREFIX+"sidequest-ddc894113529391f";
-const FILES=["assets/index-CUE5KLmy.js","assets/index-Cdf2LQD2.css","cloud-config.example.json","favicon.svg","icon-bright-180.png","icon-bright-192.png","icon-bright-512.png","icon-v4-180.png","icon-v4-192.png","icon-v4-512.png","index.html","manifest.webmanifest","setup/supabase.sql"];
+const CACHE=PREFIX+"sidequest-5d3de80f55123dde";
+const FILES=["assets/index-BM33kXO5.css","assets/index-CnqYSBig.js","favicon.svg","icon-bright-180.png","icon-bright-192.png","icon-bright-512.png","icon-v4-180.png","icon-v4-192.png","icon-v4-512.png","index.html","manifest.webmanifest"];
 const url=p=>new URL(p,self.registration.scope).href;
+self.addEventListener('message',event=>{if(event.data?.type==='SKIP_WAITING')self.skipWaiting();});
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES.map(url)))));
 self.addEventListener('activate',event=>event.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
 self.addEventListener('fetch',event=>{
