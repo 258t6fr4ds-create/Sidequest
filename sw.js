@@ -1,6 +1,6 @@
 const PREFIX='sidequest:'+self.registration.scope+':';
-const CACHE=PREFIX+"sidequest-7a045f3294ace521";
-const FILES=["assets/index-B_qCrGSr.js","assets/index-CsD4Kw6Y.css","favicon.svg","icon-bright-180.png","icon-bright-192.png","icon-bright-512.png","icon-v4-180.png","icon-v4-192.png","icon-v4-512.png","index.html","manifest.webmanifest"];
+const CACHE=PREFIX+"sidequest-97d05a9a490c8763";
+const FILES=["assets/index-CrO9lr85.css","assets/index-CuoJ2hx8.js","favicon.svg","icon-bright-180.png","icon-bright-192.png","icon-bright-512.png","icon-v4-180.png","icon-v4-192.png","icon-v4-512.png","index.html","manifest.webmanifest"];
 const url=p=>new URL(p,self.registration.scope).href;
 self.addEventListener('message',event=>{if(event.data?.type==='SKIP_WAITING')self.skipWaiting();});
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES.map(url)))));
