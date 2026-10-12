@@ -1,5 +1,5 @@
 const PREFIX='sidequest:'+self.registration.scope+':';
-const CACHE=PREFIX+"sidequest-efe8d7e1e54a1f9f";
+const CACHE=PREFIX+"sidequest-buildcheck-20261012-v1";
 const FILES=["assets/index-CQ0BlSIi.css","assets/index-s42Tj5bP.js","favicon.svg","icon-bright-180.png","icon-bright-192.png","icon-bright-512.png","icon-v4-180.png","icon-v4-192.png","icon-v4-512.png","index.html","manifest.webmanifest"];
 const url=p=>new URL(p,self.registration.scope).href;
 self.addEventListener('message',event=>{if(event.data?.type==='SKIP_WAITING')self.skipWaiting();});
