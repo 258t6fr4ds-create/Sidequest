@@ -85,3 +85,7 @@ Do not delete old hashed files in **assets** during an update: an already-open o
 Prepared 9 October 2026. The client build, authentication request/refresh flow with simulated responses, local data handling and offline cache have been checked. A real Supabase project and GitHub repository have not been connected in this session: live database setup and end-to-end sync must be verified with your project using step 9. Physical iPhone offline installation still needs the check in step 6 above.
 
 Supabase security references: https://supabase.com/docs/guides/getting-started/api-keys and https://supabase.com/docs/guides/database/postgres/row-level-security
+
+## Deployment smoke test — 12 October 2026
+
+This documentation-only change checks that updates can be committed to `main` and picked up by GitHub Pages from the current ChatGPT session. It intentionally does not modify app code, the service worker, Supabase configuration or user data. Feature changes still require access to the editable source project and its build checks.
