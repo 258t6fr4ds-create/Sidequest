@@ -86,6 +86,8 @@ Prepared 9 October 2026. The client build, authentication request/refresh flow w
 
 Supabase security references: https://supabase.com/docs/guides/getting-started/api-keys and https://supabase.com/docs/guides/database/postgres/row-level-security
 
-## Deployment smoke test — 12 October 2026
+## Fitness RPG expansion
 
-This documentation-only change checks that updates can be committed to `main` and picked up by GitHub Pages from the current ChatGPT session. It intentionally does not modify app code, the service worker, Supabase configuration or user data. Feature changes still require access to the editable source project and its build checks.
+Progress now includes Analytics, Calendar/replay and Character. Today offers optional readiness check-ins and conservative coaching. Workout → Your session customises targets and starts additional sessions. New completion XP is capped at 40 per date; the existing morning badge remains 25. Recovery counts positively. Questlines, the weekly Iron Warden and occasional encounters provide cosmetic rewards.
+
+All expansion data uses the existing device backup and cloud sync. No new SQL setup is needed. Update Sidequest on all devices before editing new records. Historical missing timestamps and durations stay unknown. The current working log and completed session snapshots are retained separately; use New session or calendar replay to create another workout. Past-day locks and the existing offline-history restrictions remain unchanged.
