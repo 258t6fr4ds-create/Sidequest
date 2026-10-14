@@ -91,3 +91,11 @@ Supabase security references: https://supabase.com/docs/guides/getting-started/a
 Progress now includes Analytics, Calendar/replay and Character. Today offers optional readiness check-ins and conservative coaching. Workout → Your session customises targets and starts additional sessions. New completion XP is capped at 40 per date; the existing morning badge remains 25. Recovery counts positively. Questlines, the weekly Iron Warden and occasional encounters provide cosmetic rewards.
 
 All expansion data uses the existing device backup and cloud sync. No new SQL setup is needed. Update Sidequest on all devices before editing new records. Historical missing timestamps and durations stay unknown. The current working log and completed session snapshots are retained separately; use New session or calendar replay to create another workout. Past-day locks and the existing offline-history restrictions remain unchanged.
+
+## Morning separation and Operation: Defusal
+
+Today now displays morning cycling and main workouts independently. Morning rides retain cycling XP and relevant goals but do not count as the main workout. Personal targets are in Progress → Analytics; muscle history, substitutions and pain feedback extend the existing exercise tools.
+
+Declare a rest day to activate the optional fictional two-hour device. Its countdown and puzzle progress persist. Match a labelled wire, solve a short sequence and hold DEFUSE—or use Skip minigame at any time. Expired devices have an instant cleanup button. Neither gameplay nor timer expiry changes XP or fabricates workouts. Complete rest day records recovery at most once per date. All earlier workout entries remain intact.
+
+See FITNESS-REFINEMENTS.md for storage, behavior and verification details. Update all devices before using the new saved fields; no database migration is required.
