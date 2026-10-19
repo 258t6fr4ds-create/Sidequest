@@ -99,3 +99,9 @@ Today now displays morning cycling and main workouts independently. Morning ride
 Declare a rest day to activate the optional fictional two-hour device. Its countdown and puzzle progress persist. Match a labelled wire, solve a short sequence and hold DEFUSE—or use Skip minigame at any time. Expired devices have an instant cleanup button. Neither gameplay nor timer expiry changes XP or fabricates workouts. Complete rest day records recovery at most once per date. All earlier workout entries remain intact.
 
 See FITNESS-REFINEMENTS.md for storage, behavior and verification details. Update all devices before using the new saved fields; no database migration is required.
+
+## 19 October reliability update
+
+School-day morning rides default to 20 minutes; weekends default to open-ended. Existing rides retain their frozen targets. Full cycling sessions now have a kilometre field, alongside the existing morning-distance field. In-app demos are ad-free offline step walkthroughs with simplified original diagrams; original videos are optional external links.
+
+To enable the seven-day queued late-sync fix, run `setup/late-sync.sql` once in your existing Supabase SQL Editor. This is additive and does not clear data. Until then, same-day cloud saving still works and late edits are kept on the device with an explanatory message. Past-day editing remains locked; download backups as usual.
